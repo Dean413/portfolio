@@ -1,0 +1,112 @@
+.resume{
+    height: 100%;
+}
+
+.timeline{
+    display: flex;
+    width: 100%;
+    padding: 20px;
+}
+
+.experience{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.experience-header{
+    display: inline-block;
+    color: var(--yellow-theme-main-color);
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 2rem;
+    left: 0.5px;
+    position: relative;
+    padding: 5px 10px;
+    border-bottom: 2px solid var(--yellow-theme-main-color);
+}
+
+.experience-header::before, .experience-header::after{
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 5px;
+    background-color: var(--yellow-theme-main-color);
+    bottom: -1px;
+}
+
+.experience-header {
+    color: white;
+}
+
+.experience-header::before {
+    left: 0;
+}
+
+.experience-header::after{
+    right: 0;
+}
+
+.timeline-container {
+    display: flex;
+    align-items: center;
+}
+
+.timeline-container h4, h3 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.timeline-container h4{
+    margin-left: 8px;
+}
+
+.experience p {
+    font-size: 14px;
+    margin-top: 0;  
+}
+
+.vertical-timeline-element-content  {
+    box-shadow: none;
+}
+
+.vertical-timeline-element-content-arrow{
+    display: none;
+}
+
+.experience button {
+    cursor: pointer;
+    padding: 10px 30px;
+    font-size: 1rem;
+    background: transparent;
+    color: red;
+    border: 1.5px solid red;
+    border-radius: 4px;
+    font-weight: 1px;
+    display: flex;
+    margin-top: 13px;
+}
+
+.experience button:hover{
+    background-color: red;
+    color: white;
+}
+
+.vertical-timeline-element-icon {
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
+}
+
+@media only screen and (max-width: 768px) {
+    .timeline {
+        flex-direction: column;
+    }
+
+    .experience {
+        width: 100%;
+        gap: 2rem;
+    }
+}
+

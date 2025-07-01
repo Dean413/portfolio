@@ -1,0 +1,170 @@
+#about{
+    width: 100%;
+  
+ 
+}
+
+.about-content {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+}
+
+.personal-details, .sevices {
+    width: 50%;
+}
+
+.personal-details h3, h2 {
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--yellow-theme-main-color);
+}
+
+h3.personal-info {
+    padding-top: 20px;
+}
+
+.about p{
+    color: var(--yellow-theme-sub-text-color);
+    font-size: 1.6rem;
+    line-height: 1.65;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed var(--yellow-theme-main-color);
+}
+
+.personal-details ul > li{
+    line-height: 1rem;
+    margin-bottom: 15px;
+    list-style-type: none;
+}
+
+span.title, span.value {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid var(--yellow-theme-main-color);
+    position: relative;
+    display: inline-block;
+    margin-right: 16px;
+    padding-bottom: 5px;
+    color: var(--yellow-theme-sub-text-color);
+}
+
+span.value {
+    border: none;
+}
+
+.services{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+}
+
+.inner-content {
+    width: 350px;
+    height: 350px;
+    background: radial-gradient(200px, var(--yellow-theme-main-color), transparent 90%);
+    position: relative;
+    border-radius: 50%;
+    border: 1px solid var(--yellow-theme-main-color);
+    
+}
+
+.inner-content div:nth-child(1){
+    position: absolute;
+    left: 41%;
+    top: -11.5%;
+
+}
+
+.inner-content div:nth-child(2){
+    position: absolute;
+    top: 41.5%;
+    right: -8%;
+}
+
+.inner-content div:nth-child(3){
+    position: absolute;
+    bottom: -10.5%;
+    left: 40%;
+}
+
+.inner-content div:nth-child(4){
+    position: absolute;
+    left: -8%;
+    top: 41%;
+}
+
+@media only screen and (max-width: 760px){
+    *{
+        box-sizing: border-box;
+    }
+    #about{
+        width: 100%;
+        overflow: hidden;
+    
+    }
+    .about-content {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .personal-details, .sevices {
+    width: 100%;
+    }
+
+    .services{
+    margin: 10px 0;
+    }
+
+    .inner-content{
+        width: 285px;
+        height: 285px;
+        background: radial-gradient(120px, var(--yellow-theme-main-color), transparent 120%)
+    }
+
+    .inner-content div:nth-child(1){
+    position: absolute;
+    left: 41%;
+    top: -13.5%;
+
+}
+
+.inner-content div:nth-child(2){
+    position: absolute;
+    top: 41.5%;
+    right: -8%;
+}
+
+.inner-content div:nth-child(3){
+    position: absolute;
+    bottom: -12%;
+    left: 40%;
+}
+
+.inner-content div:nth-child(4){
+    position: absolute;
+    left: -10%;
+    top: 41%;
+}
+
+span.title, span.value {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    position: relative;
+    border: none;
+    display: inline-block;
+    margin-right: 16px;
+    padding-bottom: 5px;
+    color: var(--yellow-theme-sub-text-color);
+}
+
+span.title{
+font-weight: 800;
+border-bottom: 0.5px solid var(--yellow-theme-main-color);
+}
+}
